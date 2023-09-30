@@ -178,6 +178,45 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </style>
 
 </head>
@@ -355,40 +394,95 @@
                         <button type="submit" class="btn btn-primary">Отправить</button>
                     </form>
                 </div>
-                <div class="row">
-                    <p>
-                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                           aria-expanded="false" aria-controls="collapseExample">
-                            Как купить?
-                        </a>
-
-                        <a class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                           data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                            Как доставить?
-                        </a>
-                        <a class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                           data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                            Какая гарантия?
-                        </a>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample1">Как заказать?</a>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                                aria-controls="multiCollapseExample2">как добраться?
+                        </button>
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample3">какая гарантия?</a>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target=".multi-collapse" aria-expanded="false"
+                                aria-controls="multiCollapseExample1 multiCollapseExample2">Закрыть
+                        </button>
                     </p>
-                    <div class="collapse" id="collapseExample">
-                        <div class="card card-body">
-                            позвонить нам
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                <div class="card card-body">
+                                    8 800 555 35 35 - Проще позвонить, чем у кого то занимать...
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="collapse multi-collapse" id="multiCollapseExample2">
-                            <div class="card card-body">
-                                Some placeholder content for the second collapse component of this multi-collapse
-                                example. This
-                                panel is hidden by default but revealed when the user activates the relevant trigger.
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                <div class="card card-body">
+                                    гагаринский дом 3
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample3">
+                                <div class="card card-body">
+                                    зуб даю
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
+            <table>
+                <!--                    <caption>-->
+                <!--                        Это пример таблицы, а это ее заголовок для описания содержимого.-->
+                <!--                    </caption>-->
+                <thead>
+                <tr>
+                    <th>номер</th>
+                    <th>название товара</th>
+                    <th>цена за штуку</th>
+                    <th>количество</th>
+                    <th>итоговая сумма</th>
+                    <th>статус заказа</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>twix</td>
+                    <td>45</td>
+                    <td>13</td>
+                    <td>585</td>
+                    <td class="alert alert-warning" role="alert">обработка</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>mars</td>
+                    <td>50</td>
+                    <td>24</td>
+                    <td>1200</td>
+                    <td class="alert alert-primary" role="alert">новый</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>snikers</td>
+                    <td>45</td>
+                    <td>5</td>
+                    <td>225</td>
+                    <td class="alert alert-success" role="alert">обработан</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>M&ms</td>
+                    <td>55</td>
+                    <td>10</td>
+                    <td>550</td>
+                    <td class="alert alert-danger" role="alert">отмена</td>
+                </tr>
+                </tbody>
+            </table>
         </main>
     </div>
 </main>
@@ -407,6 +501,45 @@
             new bootstrap.Tooltip(tooltipTriggerEl)
         })
     })()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
